@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Besnard Entretien Verts Jardin — Entretien de jardins à Ploërmel</title>
+  <meta name="description" content="David Besnard Entretien Verts — Entretien de jardins à Ploërmel et alentours (Morbihan). Tonte, taille de haies, débroussaillage, remise en état. Devis rapide, réactivité locale." />
+  <meta property="og:title" content="David Besnard Entretien Verts Jardin — Entretien de jardins à Ploërmel" />
+  <meta property="og:description" content="Tonte, taille de haies, débroussaillage, remise en état. Devis rapide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:'#e0f2fe', 100:'#bae6fd', 200:'#7dd3fc', 300:'#38bdf8', 400:'#0ea5e9', 500:'#0284c7', 600:'#0369a1', 700:'#075985', 800:'#0c4a6e', 900:'#0a3651'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 25px rgba(2,132,199,.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* ===== Preloader ===== */
+    .preloader{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(1200px 600px at 20% 10%,rgba(14,165,233,.15),transparent),linear-gradient(135deg,#0a3651,#0c4a6e);z-index:50;transition:opacity .5s ease;}
+    .preloader.hide{opacity:0;pointer-events:none}
+    .spinner{width:52px;height:52px;border-radius:50%;border:3px solid rgba(255,255,255,.25);border-top-color:#fff;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    /* ===== Page transitions / reveals ===== */
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease, transform .7s ease}
+    .reveal.show{opacity:1;transform:none}
+
+    /* ===== Subtle animated gradient background for hero ===== */
+    .hero-bg{background: radial-gradient(1200px 800px at 85% -10%, rgba(14,165,233,.25), transparent 60%), radial-gradient(800px 600px at 0% 100%, rgba(2,132,199,.2), transparent 60%), linear-gradient(180deg, #061e2f, #061826);}
+
+    html{scroll-behavior:smooth}
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 selection:bg-brand-300 selection:text-slate-900">
+  <!-- ===== Preloader ===== -->
+  <div id="preloader" class="preloader">
+    <div class="flex flex-col items-center gap-4">
+      <div class="spinner"></div>
+      <p class="text-slate-200/90 text-sm tracking-wide">Chargement de la vitrine…</p>
+    </div>
+  </div>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="fixed top-0 inset-x-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-900/50">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#top" class="flex items-center gap-3 group">
+          <img src="Assets/logo-entreprise.jpg" alt="Logo David Besnard Entretien Verts" class="w-9 h-9 rounded-xl object-cover ring-1 ring-brand-300/30 shadow-soft transition-transform group-hover:scale-105"/>
+          <span class="font-semibold tracking-wide">David Besnard Entretien Verts</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-brand-200">Services</a>
+          <a href="#realisations" class="hover:text-brand-200">Réalisations</a>
+          <a href="#avis" class="hover:text-brand-200">Avis</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-lg bg-brand-400/10 ring-1 ring-brand-400/40 hover:bg-brand-400/20">Devis rapide</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <main id="top" class="pt-24">
+    <section class="hero-bg overflow-hidden">
+      <div class="mx-auto max-w-6xl px-4 py-20">
+        <div class="grid md:grid-cols-2 items-center gap-10">
+          <div class="reveal">
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight">Entretien de jardins à <span class="text-brand-200">Ploërmel</span> et alentours</h1>
+            <p class="mt-5 text-slate-300/90 text-lg">Tonte, taille de haies, débroussaillage, remise en état, petits élagages. Intervention rapide dans le Morbihan.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#contact" class="px-5 py-3 rounded-xl bg-brand-400 text-slate-950 font-semibold shadow-soft hover:translate-y-[-1px] transition">Demander un devis</a>
+              <a href="https://www.facebook.com/dbev56460" target="_blank" class="px-5 py-3 rounded-xl ring-1 ring-slate-700 hover:ring-slate-500">Voir la page Facebook</a>
+            </div>
+            <div class="mt-6 flex items-center gap-3 text-slate-400 text-sm">
+              <span class="inline-flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 7-7 7-7-7 7-7Z" stroke="#7dd3fc"/></svg> Basé à Ploërmel</span>
+              <span class="inline-flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#7dd3fc"/><path d="M12 7v5l3 3" stroke="#7dd3fc"/></svg> Réactif & soigné</span>
+            </div>
+          </div>
+          <div class="reveal md:justify-self-end">
+            <div class="relative w-full max-w-md mx-auto">
+              <img src="Assets/proprios.jpeg" alt="David Besnard, propriétaires de l'entreprise" class="rounded-2xl ring-1 ring-white/10 shadow-2xl"/>
+              <div class="absolute -bottom-6 -left-6 w-40 h-40 rounded-3xl bg-brand-400/20 blur-2xl"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article à la une -->
+        <a href="https://actu.fr/bretagne/ploermel_56165/entretien-de-jardins-cette-entreprise-a-choisi-ploermel-pour-se-developper_61950091.html" target="_blank" class="reveal block mt-14 group">
+          <div class="grid md:grid-cols-[1.2fr,2fr] gap-6 items-center p-4 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <img class="rounded-xl aspect-[16/9] object-cover" src="Assets/machine-en-action.jpg" alt="Article Ploërmel entretien de jardins David Besnard Entretien Verts"/>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-brand-200/90">Vu dans la presse locale</p>
+              <h3 class="mt-1 text-xl font-semibold">Une entreprise d'entretien de jardins choisit Ploërmel pour se développer</h3>
+              <p class="mt-2 text-slate-300/90">Découvrir l'article sur Actu.fr →</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="py-20">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="reveal text-3xl md:text-4xl font-semibold">Services</h2>
+        <p class="reveal mt-3 text-slate-300/90 max-w-2xl">Entretien complet des espaces verts pour particuliers, pros et copropriétés dans le Morbihan.</p>
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card -->
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Tonte & débroussaillage</div>
+            <p class="mt-2 text-sm text-slate-300/90">Pelouses nettes, finitions soignées, évacuation des déchets verts.</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Taille de haies</div>
+            <p class="mt-2 text-sm text-slate-300/90">Haies régulières, réduction, remise en forme, haies libres ou taillées.</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Remise en état</div>
+            <p class="mt-2 text-sm text-slate-300/90">Jardin envahi ? On remet tout à plat : désherbage, débroussaillage, finitions.</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Petits élagages</div>
+            <p class="mt-2 text-sm text-slate-300/90">Petites coupes d'arbustes / branches (hors gros abattage).</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Bordures & finitions</div>
+            <p class="mt-2 text-sm text-slate-300/90">Délimitations propres, soufflage des allées, nettoyage fin de chantier.</p>
+          </div>
+          <div class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/7">
+            <div class="text-brand-200 text-lg font-semibold">Collecte & évacuation</div>
+            <p class="mt-2 text-sm text-slate-300/90">On repart avec les déchets verts, site propre garanti.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Réalisations / Galerie ===== -->
+    <section id="realisations" class="py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="reveal flex items-end justify-between">
+          <h2 class="text-3xl md:text-4xl font-semibold">Galerie</h2>
+          <a href="https://www.facebook.com/dbev56460" target="_blank" class="text-sm hover:text-brand-200">Voir plus sur Facebook →</a>
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/gazon-buisson-soignes.jpg" alt="Gazon et buissons soignés après intervention DBEV"/>
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/machine-gazon-coupe.jpg" alt="Machine DBEV et gazon fraîchement coupé"/>
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/machine-trace-passage.jpg" alt="Trace nette laissée par la machine DBEV"/>
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/machines-pour-travailler.jpg" alt="Matériel professionnel DBEV pour l'entretien de jardins"/>
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/machine-en-action.jpg" alt="Machine DBEV en pleine action"/>
+          <img class="reveal rounded-xl aspect-[4/3] object-cover ring-1 ring-white/10" src="Assets/gazon-buisson-soignes.jpg" alt="Résultat final : espaces verts entretenus"
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Avis ===== -->
+    <section id="avis" class="py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="reveal flex items-center justify-between">
+          <h2 class="text-3xl md:text-4xl font-semibold">Avis Google (extraits)</h2>
+          <span class="text-sm text-slate-400">Note moyenne observée : 5/5 ★</span>
+        </div>
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- AGAT Logistique -->
+          <article class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10">
+            <div class="flex items-center gap-2 text-amber-300" aria-label="5 étoiles">★★★★★</div>
+            <p class="mt-3 text-slate-200 text-sm">« Merci à David pour son avis et ses conseils de pro sur notre propriété. Nous venons d’acquérir notre maison et David a su nous conseiller sur l’aménagement… »</p>
+            <p class="mt-3 text-xs text-slate-400">– AGAT Logistique · Visité en mai 2024 · il y a 1 an</p>
+          </article>
+
+          <!-- Fredyy gaucher -->
+          <article class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10">
+            <div class="flex items-center gap-2 text-amber-300" aria-label="5 étoiles">★★★★★</div>
+            <p class="mt-3 text-slate-200 text-sm">« Entreprise sérieuse. Très bon boulot, je recommande. »</p>
+            <p class="mt-3 text-xs text-slate-400">– Fredyy gaucher · Visité en avril · il y a 5 mois</p>
+          </article>
+
+          <!-- Isabelle Lorton -->
+          <article class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10">
+            <div class="flex items-center gap-2 text-amber-300" aria-label="5 étoiles">★★★★★</div>
+            <p class="mt-3 text-slate-200 text-sm">« David s'occupe de mon jardin en mon absence régulièrement et j'apprécie beaucoup son sérieux et son courage car il y a de quoi faire dans ce jardin :-) Je recommande… »</p>
+            <p class="mt-3 text-xs text-slate-400">– Isabelle Lorton · Visité en août 2021 · modifié il y a 3 ans</p>
+          </article>
+
+          <!-- Bacxo12 -->
+          <article class="reveal p-6 rounded-2xl bg-white/5 ring-1 ring-white/10">
+            <div class="flex items-center gap-2 text-amber-300" aria-label="5 étoiles">★★★★★</div>
+            <p class="mt-3 text-slate-200 text-sm">« Très professionnel, agréable, minutieux ; je le recommande fortement et travail toujours très propre. »</p>
+            <p class="mt-3 text-xs text-slate-400">– Bacxo12 · Visité en novembre 2023 · il y a 1 an</p>
+          </article>
+        </div>
+        <p class="reveal mt-6 text-xs text-slate-500">Extraits issus des avis Google fournis. Lien “Voir tous les avis Google” à ajouter.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="py-20">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="reveal">
+            <h2 class="text-3xl md:text-4xl font-semibold">Demander un devis</h2>
+            <p class="mt-3 text-slate-300/90">Décrivez brièvement votre besoin (surface, type de travaux, ville). Réponse rapide.</p>
+            <form class="mt-6 grid gap-3" onsubmit="event.preventDefault(); document.getElementById('sent').classList.remove('hidden');">
+              <input type="text" required placeholder="Votre nom" class="px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 outline-none focus:ring-brand-300/60" />
+              <input type="tel" required placeholder="Téléphone" class="px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 outline-none focus:ring-brand-300/60" />
+              <textarea required rows="4" placeholder="Votre message" class="px-4 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 outline-none focus:ring-brand-300/60"></textarea>
+              <button class="mt-1 px-5 py-3 rounded-xl bg-brand-400 text-slate-950 font-semibold shadow-soft hover:translate-y-[-1px] transition">Envoyer</button>
+              <p id="sent" class="hidden text-sm text-brand-200">Message prêt. (Brancher à votre outil d'envoi ou mailto:)</p>
+            </form>
+            <p class="mt-6 text-sm text-slate-400">Astuce : vous pouvez aussi nous écrire via Facebook.</p>
+          </div>
+          <div class="reveal space-y-4">
+            <div class="p-5 rounded-2xl bg-white/5 ring-1 ring-white/10">
+              <div class="text-sm text-slate-400">Contact</div>
+              <div class="mt-1 text-lg">Ploërmel & alentours, Morbihan</div>
+              <!-- REMPLIR ICI LE NUMÉRO SI DISPONIBLE -->
+              <div class="mt-2"><a href="tel:+33XXXXXXXXX" class="hover:text-brand-200">+33 X XX XX XX XX</a></div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <a href="https://www.facebook.com/dbev56460" target="_blank" class="p-5 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 flex items-center justify-center">Facebook</a>
+              <a href="https://www.facebook.com/messages/t/dbev56460" target="_blank" class="p-5 rounded-2xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10 flex items-center justify-center">Messenger</a>
+            </div>
+            <p class="text-xs text-slate-500">*Cette page est une vitrine d'exemple. Remplacer les coordonnées par les informations réelles avant publication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 text-sm text-slate-400 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> David Besnard Entretien Verts — Vitrine locale</p>
+      <div class="flex items-center gap-4">
+        <a class="hover:text-brand-200" href="#top">Haut de page</a>
+        <a class="hover:text-brand-200" href="https://www.facebook.com/dbev56460" target="_blank">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script>
+    // Preloader with minimum display time
+    (function(){
+      const MIN = 900; // ms
+      const FALLBACK = 5000; // ms
+      const t0 = performance.now();
+      const pre = document.getElementById('preloader');
+      let closed = false;
+      const close = ()=>{ if(closed) return; closed = true; pre.classList.add('hide'); setTimeout(()=>pre.remove(), 600); };
+      window.addEventListener('load', ()=>{
+        const elapsed = performance.now() - t0;
+        setTimeout(close, Math.max(0, MIN - elapsed));
+      });
+      setTimeout(close, FALLBACK);
+    })();
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
